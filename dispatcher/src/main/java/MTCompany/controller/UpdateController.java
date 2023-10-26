@@ -73,20 +73,24 @@ public class UpdateController {
             case START:
                 sendMessage.setText("Приветствую! Чтобы посмотреть список параметров поиска введите:/info");
                 break;
+            case SEARCH_TICKETS_ONE_DAY_ONE_CITY:
+                UserRequestModel userRequestModel = checkUserState(chatId);
+
+                sendMessage.setText(searchTicketsOneDayOneCity(chatId, update, requestCommands));
+                break;
+            case CANCEL:
+                sendMessage.setText(cancelUserSession(chatId));
+                break;
             case INFO:
                 sendMessage.setText(info());
                 break;
-            case SEARCH_TICKETS_ONE_DAY_ONE_CITY:
-                if (checkUserState(chatId) == EMPTY)
-                    sendMessage.setText("Введите город отправления.");
-                else if (checkUserState(chatId) == IN_PROCESS)
-                    sendMessage.setText(searchTicketsOneDayOneCity(chatId, update, requestCommands));
-                break;
         }
+
         setView(sendMessage);
+
     }
 
-    private RequestState checkUserState(Long chatId) {
+    private UserRequestModel checkUserState(Long chatId) {
         UserRequestModel userRequestModel;
         if (usersMap.getUsersRequestMap().get(chatId) == null) {
             userRequestModel = UserRequestModel.builder()
@@ -94,23 +98,35 @@ public class UpdateController {
                     .requestState(IN_PROCESS)
                     .build();
             usersMap.getUsersRequestMap().put(userRequestModel.getChatId(), userRequestModel);
-            return EMPTY;
         }
-        return usersMap.getUsersRequestMap().get(chatId).getRequestState();
+
     }
+
+    private String cancelUserSession(Long chatId) {
+        if (usersMap.getUsersRequestMap().get(chatId) != null) {
+            usersMap.getUsersRequestMap().remove(chatId);
+        }
+        return "Сессия обновлена\n" + info();
+    }
+
 
     private String searchTicketsOneDayOneCity(Long chatId, Update update, RequestCommands requestCommands) {
         String userMessage = update.getMessage().getText();
-        String output;
+        String output = "";
         UserRequestModel userRequestModel = usersMap.getUsersRequestMap().get(chatId);
         userRequestModel.setRequestCommands(requestCommands);
 
-
         if (userRequestModel.getDepartureCity() == null) {
-            output = userRequestModel.validate();
+            if ((output = userRequestModel.validate()) == null) {
+                userRequestModel.setDepartureCity(userMessage);
+                output = "Введите город прибытия.";
+            }
 
         } else if (userRequestModel.getArrivalCity() == null) {
-            userRequestModel
+            if ((output = userRequestModel.validate()) == null) {
+                userRequestModel.setArrivalCity(userMessage);
+                output = "Введите дату прибытия.";
+            }
         }
         return output;
     }

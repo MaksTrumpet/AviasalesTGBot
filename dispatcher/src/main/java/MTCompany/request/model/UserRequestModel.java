@@ -47,22 +47,24 @@ public class UserRequestModel {
             for (ConstraintViolation<UserRequestModel> violation : violations) {
                 String fieldName = violation.getPropertyPath().toString();
                 sb.append(violation.getMessage()).append("\n");
-
-                switch (fieldName) {
-                    case "departureCity":
-                        this.departureCity = null;
-                        break;
-                    case "arrivalCity":
-                        this.arrivalCity = null;
-                        break;
-                    case "date":
-                        this.date = null;
-                        break;
-                }
+                cleanWithNoValidate(fieldName);
             }
             return sb.toString();
         }
     }
 
+    private void cleanWithNoValidate(String fieldName) {
+        switch (fieldName) {
+            case "departureCity":
+                this.departureCity = null;
+                break;
+            case "arrivalCity":
+                this.arrivalCity = null;
+                break;
+            case "date":
+                this.date = null;
+                break;
+        }
+    }
 }
 
