@@ -3,12 +3,17 @@ package MTCompany.request.model;
 import MTCompany.request.RequestCommands;
 import MTCompany.request.RequestState;
 import lombok.*;
-import org.springframework.stereotype.Component;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.Validation;
+import javax.validation.Validator;
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+
 import java.time.LocalDate;
+import java.util.Set;
+
 
 @Getter
 @Setter
@@ -30,5 +35,34 @@ public class UserRequestModel {
 
     private RequestState requestState;
     private RequestCommands requestCommands;
+
+    public String validate() {
+        Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+        Set<ConstraintViolation<UserRequestModel>> violations = validator.validate(this);
+
+        if (violations.isEmpty()) {
+            return null;
+        } else {
+            StringBuilder sb = new StringBuilder();
+            for (ConstraintViolation<UserRequestModel> violation : violations) {
+                String fieldName = violation.getPropertyPath().toString();
+                sb.append(violation.getMessage()).append("\n");
+
+                switch (fieldName) {
+                    case "departureCity":
+                        this.departureCity = null;
+                        break;
+                    case "arrivalCity":
+                        this.arrivalCity = null;
+                        break;
+                    case "date":
+                        this.date = null;
+                        break;
+                }
+            }
+            return sb.toString();
+        }
+    }
+
 }
 

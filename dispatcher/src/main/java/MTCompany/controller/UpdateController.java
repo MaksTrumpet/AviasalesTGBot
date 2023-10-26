@@ -1,6 +1,7 @@
 package MTCompany.controller;
 
 import MTCompany.request.RequestCommands;
+import MTCompany.request.RequestState;
 import MTCompany.request.UsersMap;
 import MTCompany.request.model.UserRequestModel;
 import MTCompany.service.UpdateProducer;
@@ -54,11 +55,11 @@ public class UpdateController {
                 case "/start":
                     createUserRequest(START, chatId, update);
                     return;
-                case "/help":
-                    createUserRequest(HELP, chatId, update);
-                    return;
-                default:
+                case "/info":
                     createUserRequest(INFO, chatId, update);
+                    return;
+                case "/1":
+                    createUserRequest(SEARCH_TICKETS_ONE_DAY_ONE_CITY, chatId, update);
             }
         } else {
             setUnsupportedMessageTypeView(update);
@@ -76,31 +77,42 @@ public class UpdateController {
                 sendMessage.setText(info());
                 break;
             case SEARCH_TICKETS_ONE_DAY_ONE_CITY:
-                if (checkUserState(chatId,requestCommands) == EMPTY)
+                if (checkUserState(chatId) == EMPTY)
                     sendMessage.setText("Введите город отправления.");
                 else if (checkUserState(chatId) == IN_PROCESS)
-                    sendMessage.setText(searchTicketsOneDayOneCity(chatId, update));
+                    sendMessage.setText(searchTicketsOneDayOneCity(chatId, update, requestCommands));
                 break;
-
         }
         setView(sendMessage);
     }
 
-    private boolean checkUserState(Long chatId,RequestCommands requestCommands) {
+    private RequestState checkUserState(Long chatId) {
         UserRequestModel userRequestModel;
-        if (usersMap.getUsersRequestModelConcurrentHashMap().get(chatId) == null) {
+        if (usersMap.getUsersRequestMap().get(chatId) == null) {
             userRequestModel = UserRequestModel.builder()
                     .chatId(chatId)
                     .requestState(IN_PROCESS)
-                    .requestCommands(requestCommands)
                     .build();
-            usersMap.getUsersRequestModelConcurrentHashMap().put(userRequestModel.getChatId(), userRequestModel);
+            usersMap.getUsersRequestMap().put(userRequestModel.getChatId(), userRequestModel);
+            return EMPTY;
         }
+        return usersMap.getUsersRequestMap().get(chatId).getRequestState();
     }
 
-    private String searchTicketsOneDayOneCity(Long chatId, Update update) {
+    private String searchTicketsOneDayOneCity(Long chatId, Update update, RequestCommands requestCommands) {
+        String userMessage = update.getMessage().getText();
+        String output;
+        UserRequestModel userRequestModel = usersMap.getUsersRequestMap().get(chatId);
+        userRequestModel.setRequestCommands(requestCommands);
 
 
+        if (userRequestModel.getDepartureCity() == null) {
+            output = userRequestModel.validate();
+
+        } else if (userRequestModel.getArrivalCity() == null) {
+            userRequestModel
+        }
+        return output;
     }
 
     private String info() {

@@ -11,6 +11,6 @@ import java.util.concurrent.ConcurrentHashMap;
 @Getter
 @Component
 public class UsersMap {
-    private ConcurrentHashMap<Long, UserRequestModel> usersRequestModelConcurrentHashMap = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Long, UserRequestModel> usersRequestMap = new ConcurrentHashMap<>();
     private UserRequestModel userRequestModel;
 }
