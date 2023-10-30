@@ -1,8 +1,8 @@
 package MTCompany.controller;
 
 import MTCompany.request.RequestCommands;
-import MTCompany.request.RequestState;
 import MTCompany.request.UsersMap;
+
 import MTCompany.request.model.UserRequestModel;
 import MTCompany.service.UpdateProducer;
 import MTCompany.utils.MessageUtils;
@@ -13,8 +13,8 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static MTCompany.model.RabbitQueue.ONE_DATE_ONE_CITY_REQUEST;
 import static MTCompany.request.RequestCommands.*;
-import static MTCompany.request.RequestState.EMPTY;
-import static MTCompany.request.RequestState.IN_PROCESS;
+import static MTCompany.request.RequestState.READY;
+
 
 @Log4j
 @Component
@@ -51,32 +51,48 @@ public class UpdateController {
     private void distributeMessagesByCommands(Long chatId, Update update) {
         var message = update.getMessage();
         if (message.hasText()) {
+            String userMessage = message.getText();
             switch (message.getText()) {
                 case "/start":
-                    createUserRequest(START, chatId, update);
+                    createUserRequest(START, chatId, userMessage);
                     return;
                 case "/info":
-                    createUserRequest(INFO, chatId, update);
+                    createUserRequest(INFO, chatId, userMessage);
                     return;
                 case "/1":
-                    createUserRequest(SEARCH_TICKETS_ONE_DAY_ONE_CITY, chatId, update);
+                    createUserRequest(SEARCH_TICKETS_ONE_DAY_ONE_CITY, chatId, userMessage);
+                    return;
+                case "/cancel":
+                    createUserRequest(CANCEL, chatId, userMessage);
+                    return;
+                default:
+                    createUserRequest(INPUT_DATA, chatId, userMessage);
             }
         } else {
             setUnsupportedMessageTypeView(update);
         }
     }
 
-    private void createUserRequest(RequestCommands requestCommands, Long chatId, Update update) {
+    private void createUserRequest(RequestCommands requestCommands, Long chatId, String userMessage) {
+        UserRequestModel userRequestModel = usersMap.getUsersRequestMap().get(chatId);
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        if (userRequestModel == null) {
+
+            if (!usersMap.addUserToMap(chatId, userMessage)) {
+                sendMessage.setText("Для начала выберите одну из опций поиска.\n" + info());
+                setView(sendMessage);
+                return;
+            } else {
+                userRequestModel = usersMap.getUsersRequestMap().get(chatId);
+            }
+        }
         switch (requestCommands) {
             case START:
-                sendMessage.setText("Приветствую! Чтобы посмотреть список параметров поиска введите:/info");
+                sendMessage.setText("Приветствую!\nЧтобы посмотреть список параметров поиска введите:\n/info");
                 break;
             case SEARCH_TICKETS_ONE_DAY_ONE_CITY:
-                UserRequestModel userRequestModel = checkUserState(chatId);
-
-                sendMessage.setText(searchTicketsOneDayOneCity(chatId, update, requestCommands));
+                sendMessage.setText(userRequestModel.searchTicketsOneDayOneCity(userMessage));
                 break;
             case CANCEL:
                 sendMessage.setText(cancelUserSession(chatId));
@@ -84,63 +100,43 @@ public class UpdateController {
             case INFO:
                 sendMessage.setText(info());
                 break;
+            case INPUT_DATA:
+                sendMessage.setText(checkUserCommandAndDistribute(userMessage, userRequestModel));
         }
-
         setView(sendMessage);
-
-    }
-
-    private UserRequestModel checkUserState(Long chatId) {
-        UserRequestModel userRequestModel;
-        if (usersMap.getUsersRequestMap().get(chatId) == null) {
-            userRequestModel = UserRequestModel.builder()
-                    .chatId(chatId)
-                    .requestState(IN_PROCESS)
-                    .build();
-            usersMap.getUsersRequestMap().put(userRequestModel.getChatId(), userRequestModel);
+        if (userRequestModel.getRequestState() == READY) {
+            produceProcess(userRequestModel);
         }
-
     }
+
+    private String checkUserCommandAndDistribute(String userMessage, UserRequestModel userRequestModel) {
+        String output = "";
+        switch (userRequestModel.getRequestCommands()) {
+            case SEARCH_TICKETS_ONE_DAY_ONE_CITY:
+                output = userRequestModel.searchTicketsOneDayOneCity(userMessage);
+        }
+        return output;
+    }
+
 
     private String cancelUserSession(Long chatId) {
         if (usersMap.getUsersRequestMap().get(chatId) != null) {
             usersMap.getUsersRequestMap().remove(chatId);
         }
-        return "Сессия обновлена\n" + info();
+        return "Сессия закрыта!\n" + info(); //TODO переименовать на (отчистить параметры поиска)
     }
 
-
-    private String searchTicketsOneDayOneCity(Long chatId, Update update, RequestCommands requestCommands) {
-        String userMessage = update.getMessage().getText();
-        String output = "";
-        UserRequestModel userRequestModel = usersMap.getUsersRequestMap().get(chatId);
-        userRequestModel.setRequestCommands(requestCommands);
-
-        if (userRequestModel.getDepartureCity() == null) {
-            if ((output = userRequestModel.validate()) == null) {
-                userRequestModel.setDepartureCity(userMessage);
-                output = "Введите город прибытия.";
-            }
-
-        } else if (userRequestModel.getArrivalCity() == null) {
-            if ((output = userRequestModel.validate()) == null) {
-                userRequestModel.setArrivalCity(userMessage);
-                output = "Введите дату прибытия.";
-            }
-        }
-        return output;
-    }
 
     private String info() {
-        return String.format("Список доступных команд:\n" +
-                "%s - Поиск билета с параметрами:\n" +
-                "\"город - город, дата\"  ", "/1");
+        return "Список доступных команд:\n" +
+                SEARCH_TICKETS_ONE_DAY_ONE_CITY + " - Поиск билета с параметрами:\"город - город, дата\"\n" +
+                CANCEL + " - Закрыть сессию";
     }
 
-    private void produceProcess(RequestCommands requestCommands, Update update) {
-        switch (requestCommands) {
+    private void produceProcess(UserRequestModel userRequestModel) {
+        switch (userRequestModel.getRequestCommands()) {
             case SEARCH_TICKETS_ONE_DAY_ONE_CITY:
-                updateProducer.produce(ONE_DATE_ONE_CITY_REQUEST, update);
+                updateProducer.produce(ONE_DATE_ONE_CITY_REQUEST, userRequestModel);
                 log.info("Update produce to rabbit");
                 return;
         }
