@@ -42,5 +42,11 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.13.0</version> <!-- Укажите версию, соответствующую вашей версии Jackson -->
+        </dependency>
     </dependencies>
 </project>

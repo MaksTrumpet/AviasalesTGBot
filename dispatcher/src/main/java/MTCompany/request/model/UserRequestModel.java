@@ -7,7 +7,6 @@ import MTCompany.request.handler.Impl.DepartureCityAdd;
 import MTCompany.request.handler.Impl.DepartureDate;
 import MTCompany.request.handler.RequestHandler;
 import lombok.*;
-import org.telegram.telegrambots.meta.api.objects.Update;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
@@ -26,6 +25,8 @@ import static MTCompany.request.RequestState.READY;
 @Getter
 @Setter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserRequestModel {
     private Long chatId;
 
@@ -42,8 +43,8 @@ public class UserRequestModel {
     private LocalDate departureDate;
 
 
-    private RequestState requestState;
-    private RequestCommands requestCommands;
+    private transient RequestState requestState;
+    private transient RequestCommands requestCommands;
 
 
     public String searchTicketsOneDayOneCity(String userMessage) {
@@ -99,6 +100,7 @@ public class UserRequestModel {
                 break;
             case "date":
                 violations = validator.validateProperty(this, "departureDate");
+
                 break;
             default:
                 violations = validator.validate(this);
