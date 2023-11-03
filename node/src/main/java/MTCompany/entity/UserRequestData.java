@@ -8,7 +8,6 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-//@EqualsAndHashCode(exclude = "id")
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor

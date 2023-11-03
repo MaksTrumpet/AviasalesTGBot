@@ -77,8 +77,10 @@ public class UserRequestModel {
             String departureDateAddResult = requestHandler.addData(this, userMessage);
             if (departureDateAddResult != null) {
                 output = departureDateAddResult;
+            } else {
+                this.setRequestState(READY);
             }
-            this.setRequestState(READY);
+
             return output;
         }
         return output;//TODO разобраться с порядком методов. Вызвать produceProcess перед ответом пользователю.

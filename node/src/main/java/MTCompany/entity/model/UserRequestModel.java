@@ -1,4 +1,4 @@
-package MTCompany.entity;
+package MTCompany.entity.model;
 
 
 import lombok.*;

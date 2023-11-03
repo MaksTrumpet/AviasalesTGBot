@@ -1,8 +1,7 @@
 package MTCompany.service.impl;
 
-import MTCompany.entity.UserRequestModel;
+import MTCompany.entity.model.UserRequestModel;
 import MTCompany.service.ConsumerService;
-import MTCompany.service.MainService;
 import lombok.extern.log4j.Log4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
@@ -14,16 +13,16 @@ import static MTCompany.model.RabbitQueue.ONE_DATE_ONE_CITY_REQUEST;
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
 
-    private final MainService mainService;
+    private final MainServiceImpl mainServiceImpl;
 
-    public ConsumerServiceImpl(MainService mainService) {
-        this.mainService = mainService;
+    public ConsumerServiceImpl(MainServiceImpl mainServiceImpl) {
+        this.mainServiceImpl = mainServiceImpl;
     }
 
     @Override
     @RabbitListener(queues = ONE_DATE_ONE_CITY_REQUEST)
     public void oneDayOneCityUpdate(UserRequestModel userRequestModel) {
         log.debug("NODE: oneDayOneCityUpdate queue is received");
-        mainService.processOneDayOneCity(userRequestModel);
+        mainServiceImpl.processOneDayOneCity(userRequestModel,ONE_DATE_ONE_CITY_REQUEST);
     }
 }
