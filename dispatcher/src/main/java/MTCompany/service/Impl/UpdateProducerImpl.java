@@ -1,6 +1,6 @@
 package MTCompany.service.Impl;
 
-import MTCompany.request.model.UserRequestModel;
+import MTCompany.model.UserRequestModel;
 import MTCompany.service.UpdateProducer;
 import lombok.extern.log4j.Log4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

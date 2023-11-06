@@ -1,6 +1,6 @@
 package MTCompany.service;
 
-import MTCompany.request.model.UserRequestModel;
+import MTCompany.model.UserRequestModel;
 
 
 public interface UpdateProducer {

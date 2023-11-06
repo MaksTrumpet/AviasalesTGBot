@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 @Table(name = "tickets")
 public class Ticket {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String ticketId;
 
     private String proposalId;

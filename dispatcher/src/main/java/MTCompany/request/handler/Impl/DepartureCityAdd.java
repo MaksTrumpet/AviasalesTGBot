@@ -1,7 +1,8 @@
 package MTCompany.request.handler.Impl;
 
 import MTCompany.request.handler.RequestHandler;
-import MTCompany.request.model.UserRequestModel;
+import MTCompany.model.UserRequestModel;
+import MTCompany.utils.CityIATALoader;
 
 public class DepartureCityAdd implements RequestHandler {
     @Override

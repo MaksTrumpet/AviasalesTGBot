@@ -1,4 +1,4 @@
-package MTCompany.request.model;
+package MTCompany.model;
 
 import MTCompany.request.RequestCommands;
 import MTCompany.request.RequestState;
@@ -83,7 +83,7 @@ public class UserRequestModel {
 
             return output;
         }
-        return output;//TODO разобраться с порядком методов. Вызвать produceProcess перед ответом пользователю.
+        return output;
     }
 
 
@@ -102,7 +102,6 @@ public class UserRequestModel {
                 break;
             case "date":
                 violations = validator.validateProperty(this, "departureDate");
-
                 break;
             default:
                 violations = validator.validate(this);

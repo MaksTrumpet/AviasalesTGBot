@@ -3,7 +3,7 @@ package MTCompany.controller;
 import MTCompany.request.RequestCommands;
 import MTCompany.request.UsersMap;
 
-import MTCompany.request.model.UserRequestModel;
+import MTCompany.model.UserRequestModel;
 import MTCompany.service.UpdateProducer;
 import MTCompany.utils.MessageUtils;
 import lombok.extern.log4j.Log4j;
@@ -149,7 +149,7 @@ public class UpdateController {
         setView(sendMessage);
     }
 
-    private void setView(SendMessage sendMessage) {
+    public void setView(SendMessage sendMessage) {
         telegramBot.sendAnswerMessage(sendMessage);
     }
 
