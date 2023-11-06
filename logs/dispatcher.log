@@ -1,0 +1,213 @@
+2023-10-25 16:42:22 DEBUG UpdateProducerImpl:20 - /1
+2023-10-25 16:42:34 INFO  UpdateController:55 - Update produce to rabbit
+2023-10-30 01:57:19 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 01:57:40 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 01:58:09 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 02:03:23 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 02:04:14 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 02:05:50 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 02:39:27 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 10:38:27 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 14:11:58 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 14:12:50 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 14:14:09 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 14:14:21 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 14:36:22 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 14:42:05 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 15:04:23 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=675734266, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 15:13:21 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 15:23:10 ERROR TelegramBot:51 - org.telegram.telegrambots.meta.exceptions.TelegramApiValidationException: Text parameter can't be empty in method: SendMessage(chatId=574298358, text=, parseMode=null, disableWebPagePreview=null, disableNotification=null, replyToMessageId=null, replyMarkup=null, entities=null, allowSendingWithoutReply=null, protectContent=null)
+2023-10-30 15:28:27 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='tyj', arrivalCity='tdyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-30 15:31:13 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='kyg', arrivalCity='kug', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 13:19:56 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Москва', arrivalCity='Санкт-Петербург', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 13:35:25 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='ко', arrivalCity='аео', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 13:42:17 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='ко', arrivalCity='ко', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 13:47:45 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='ыкп', arrivalCity='вт', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:01:18 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='yu', arrivalCity='fgyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:08:47 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='ож', arrivalCity='дшр', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:12:23 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='рлд', arrivalCity='енпл', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:27:01 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='гр', arrivalCity='др', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:27:02 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 14:33:07 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fyk', arrivalCity='dfgj', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:33:07 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 14:35:51 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='dxtj', arrivalCity='fgj', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:35:51 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 14:39:23 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='кер', arrivalCity='еог', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:39:23 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 14:44:37 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='аео', arrivalCity='ввр', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:44:37 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 14:47:32 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fh', arrivalCity='fdj', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 14:47:32 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:01:10 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fuk', arrivalCity='tfyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:01:10 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:10:57 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fuk', arrivalCity='tfyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:10:57 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:10:58 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fuk', arrivalCity='tfyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:10:58 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:10:59 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fuk', arrivalCity='tfyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:10:59 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:13:07 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fuk', arrivalCity='tfyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:13:07 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:13:20 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='fuk', arrivalCity='tfyk', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:13:20 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:14:01 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='kju', arrivalCity='kpij', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:14:01 INFO  UpdateController:140 - Update produce to rabbit
+2023-10-31 15:17:13 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Москва', arrivalCity='Санкт-Петербург', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-10-31 15:17:13 INFO  UpdateController:140 - Update produce to rabbit
+2023-11-02 14:56:12 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-10-29, requestState=READY, requestCommands=/1}
+2023-11-02 14:56:12 INFO  UpdateController:140 - Update produce to rabbit
+2023-11-02 14:58:20 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-10-29, requestState=READY, requestCommands=/1}
+2023-11-02 14:58:20 INFO  UpdateController:140 - Update produce to rabbit
+2023-11-02 15:18:30 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-11-02 15:18:30 INFO  UpdateController:140 - Update produce to rabbit
+2023-11-02 15:47:17 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-11-02 15:47:17 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-02 15:50:34 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-11-02 15:50:34 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 15:38:00 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-12, requestState=READY, requestCommands=/1}
+2023-11-03 15:38:00 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 15:48:43 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-03 15:48:43 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 15:57:45 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 15:57:45 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 17:22:41 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 17:22:41 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 17:25:04 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 17:25:04 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 17:29:09 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 17:29:09 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 17:32:46 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 17:32:46 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 17:35:17 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 17:35:17 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 19:50:45 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Саратов', departureDate=2023-12-31, requestState=READY, requestCommands=/1}
+2023-11-03 19:50:45 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 21:30:04 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-03 21:30:04 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 21:31:33 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-03 21:31:33 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-03 21:34:14 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-03 21:34:14 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 11:02:17 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 11:02:17 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 14:44:45 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Москва', arrivalCity='Сочи', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 14:44:45 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 14:45:53 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 14:45:53 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 14:51:28 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Москва', arrivalCity='Сочи', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 14:51:30 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 14:52:13 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 14:52:26 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 15:12:55 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='ылпгр', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 15:12:55 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 15:20:28 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:28 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:28 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:28 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:29 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:30 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:31 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:31 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:31 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:31 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:31 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:31 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:34 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:34 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:34 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:34 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:34 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:34 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:35 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:36 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:37 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:37 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:37 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:40 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:20:40 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:50 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=574298358, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 15:36:50 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 15:36:50 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:50 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:50 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:50 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:50 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:51 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:36:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:20 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=6817153770, departureCity='Москва', arrivalCity='Сочи', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 15:46:20 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 15:46:52 DEBUG UpdateProducerImpl:21 - UserRequestModel{chatId=6817153770, departureCity='Сочи', arrivalCity='Москва', departureDate=2023-12-30, requestState=READY, requestCommands=/1}
+2023-11-04 15:46:52 INFO  UpdateController:141 - Update produce to rabbit
+2023-11-04 15:46:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:52 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:53 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:54 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:54 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:54 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:54 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:54 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
+2023-11-04 15:46:54 DEBUG ConsumerServiceImpl:25 - Dispatcher: oneDayOneCityUpdate queue is received
