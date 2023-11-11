@@ -1,10 +1,9 @@
 package MTCompany.request.handler.Impl;
 
-import MTCompany.request.handler.RequestHandler;
+import MTCompany.request.handler.RequestStrategy;
 import MTCompany.model.UserRequestModel;
-import MTCompany.utils.CityIATALoader;
 
-public class DepartureCityAdd implements RequestHandler {
+public class DepartureCityStrategy implements RequestStrategy {
     @Override
     public String addData(UserRequestModel userRequestModel, String userMessage) {
         userRequestModel.setDepartureCity(userMessage);

@@ -1,9 +1,8 @@
 package MTCompany.entity;
 
-
 import lombok.*;
-
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -12,64 +11,83 @@ import java.time.LocalDateTime;
 @Table(name = "tickets")
 public class Ticket {
     @Id
-    private String ticketId;
+    @Column(name = "id")
+    private String id;
 
-    private String proposalId;
-    private Double pricePerPersonValue;
-    private String airlineId;
-    private Integer flightNumber;
-    private Integer handbags;
-    private Integer baggage;
-    private String originAirport;
-    private String destinationAirport;
-    private LocalDateTime localDepartureDateTime;
-    private LocalDateTime localArrivalDateTime;
-    private String originAirportName;
-    private String originCity;
-    private String originCityName;
-    private String originCountry;
-    private String originCountryName;
-    private String destinationAirportName;
-    private String destinationCity;
-    private String destinationCityName;
-    private String destinationCountry;
-    private String destinationCountryName;
-    private String airlineName;
-    private String mainOrigin;
-    private String mainDestination;
-    private LocalDateTime date;
-    private LocalDateTime parsedAt;
+    @Column(name = "duration")
+    private String duration;
 
-    @Override
-    public String toString() {
-        return "Ticket{" +
-                "ticketId=" + ticketId +
-                ", proposalId=" + proposalId +
-                ", pricePerPersonValue=" + pricePerPersonValue +
-                ", airlineId=" + airlineId +
-                ", flightNumber='" + flightNumber + '\'' +
-                ", handbags=" + handbags +
-                ", baggage=" + baggage +
-                ", originAirport='" + originAirport + '\'' +
-                ", destinationAirport='" + destinationAirport + '\'' +
-                ", localDepartureDateTime=" + localDepartureDateTime +
-                ", localArrivalDateTime=" + localArrivalDateTime +
-                ", originAirportName='" + originAirportName + '\'' +
-                ", originCity='" + originCity + '\'' +
-                ", originCityName='" + originCityName + '\'' +
-                ", originCountry='" + originCountry + '\'' +
-                ", originCountryName='" + originCountryName + '\'' +
-                ", destinationAirportName='" + destinationAirportName + '\'' +
-                ", destinationCity='" + destinationCity + '\'' +
-                ", destinationCityName='" + destinationCityName + '\'' +
-                ", destinationCountry='" + destinationCountry + '\'' +
-                ", destinationCountryName='" + destinationCountryName + '\'' +
-                ", airlineName='" + airlineName + '\'' +
-                ", mainOrigin='" + mainOrigin + '\'' +
-                ", mainDestination='" + mainDestination + '\'' +
-                ", date=" + date +
-                ", parsedAt=" + parsedAt +
-                '}';
-    }
+    @Column(name = "flight_id")
+    private String flight_id;
+
+    @Column(name = "carrier_code")
+    private String carrier_code;
+
+    @Column(name = "flight_number")
+    private String flight_number;
+
+    @Column(name = "is_direct_flight")
+    private String is_direct_flight;
+
+    @Column(name = "is_charter_flight")
+    private String is_charter_flight;
+
+    @Column(name = "origin")
+    private String origin;
+
+    @Column(name = "destination")
+    private String destination;
+
+    @Column(name = "localDepartureAt")
+    private LocalDateTime localDepartureAt;
+
+    @Column(name = "local_arrival_at")
+    private LocalDateTime local_arrival_at;
+
+    @Column(name = "origin_city")
+    private String origin_city;
+
+    @Column(name = "originIata")
+    private String originIata;
+
+    @Column(name = "origin_name")
+    private String origin_name;
+
+    @Column(name = "origin_country_code")
+    private String origin_country_code;
+
+    @Column(name = "origin_country_name")
+    private String origin_country_name;
+
+    @Column(name = "destination_city")
+    private String destination_city;
+
+    @Column(name = "destinationIata")
+    private String destinationIata;
+
+    @Column(name = "destination_name")
+    private String destination_name;
+
+    @Column(name = "destination_country_code")
+    private String destination_country_code;
+
+    @Column(name = "destination_country_name")
+    private String destination_country_name;
+
+    @Column(name = "carrier_name")
+    private String carrier_name;
+
+    @Column(name = "origin_metropolis")
+    private String origin_metropolis;
+
+    @Column(name = "origin_metropolis_iata")
+    private String origin_metropolis_iata;
+
+    @Column(name = "departure_date")
+    private LocalDate departureDate;
+
+    @Column(name = "created_at")
+    private LocalDateTime created_at;
 }
+
 

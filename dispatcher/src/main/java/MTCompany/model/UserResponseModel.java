@@ -3,6 +3,7 @@ package MTCompany.model;
 import lombok.*;
 import lombok.extern.log4j.Log4j;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 
@@ -15,60 +16,65 @@ import java.time.LocalDateTime;
 public class UserResponseModel {
     private Long chatId;
 
-    private String ticketId;
-    private String proposalId;
-    private Double pricePerPersonValue;
-    private String airlineId;
-    private Integer flightNumber;
-    private Integer handbags;
-    private Integer baggage;
-    private String originAirport;
-    private String destinationAirport;
-    private LocalDateTime localDepartureDateTime;
-    private LocalDateTime localArrivalDateTime;
-    private String originAirportName;
-    private String originCity;
-    private String originCityName;
-    private String originCountry;
-    private String originCountryName;
-    private String destinationAirportName;
-    private String destinationCity;
-    private String destinationCityName;
-    private String destinationCountry;
-    private String destinationCountryName;
-    private String airlineName;
-    private String mainOrigin;
-    private String mainDestination;
-    private LocalDateTime date;
-    private LocalDateTime parsedAt;
+    private String id;
+    private String duration;
+    private String flight_id;
+    private String carrier_code;
+    private String flight_number;
+    private String is_direct_flight;
+    private String is_charter_flight;
+    private String origin;
+    private String destination;
+    private LocalDateTime local_departure_at;
+    private LocalDateTime local_arrival_at;
+    private String origin_city;
+    private String origin_iata;
+    private String origin_name;
+    private String origin_country_code;
+    private String origin_country_name;
+    private String destination_city;
+    private String destination_iata;
+    private String destination_name;
+    private String destination_country_code;
+    private String destination_country_name;
+    private String carrier_name;
+    private String origin_metropolis;
+    private String origin_metropolis_iata;
+    private LocalDate departure_date;
+    private LocalDateTime created_at;
+
 
     public String createAnswer() {
-        return "Идентификатор билета: " + ticketId + "\n" +
-                "Идентификатор предложения: " + proposalId + "\n" +
-                "Цена за человека: " + pricePerPersonValue + "\n" +
-                "Идентификатор авиакомпании: " + airlineId + "\n" +
-                "Номер рейса: " + flightNumber + "\n" +
-                "Количество ручной клади: " + handbags + "\n" +
-                "Количество багажа: " + baggage + "\n" +
-                "Аэропорт отправления: " + originAirport + "\n" +
-                "Аэропорт назначения: " + destinationAirport + "\n" +
-                "Местное время отправления: " + localDepartureDateTime + "\n" +
-                "Местное время прибытия: " + localArrivalDateTime + "\n" +
-                "Название аэропорта отправления: " + originAirportName + "\n" +
-                "Город отправления: " + originCity + "\n" +
-                "Название города отправления: " + originCityName + "\n" +
-                "Страна отправления: " + originCountry + "\n" +
-                "Название страны отправления: " + originCountryName + "\n" +
-                "Название аэропорта назначения: " + destinationAirportName + "\n" +
-                "Город назначения: " + destinationCity + "\n" +
-                "Название города назначения: " + destinationCityName + "\n" +
-                "Страна назначения: " + destinationCountry + "\n" +
-                "Название страны назначения: " + destinationCountryName + "\n" +
-                "Название авиакомпании: " + airlineName + "\n" +
-                "Основное место отправления: " + mainOrigin + "\n" +
-                "Основное место назначения: " + mainDestination + "\n" +
-                "Дата: " + date + "\n" +
-                "Время разбора: " + parsedAt;
+        return "Информация о билете:\n" +
+//                "ID чата: " + chatId + "\n" +
+//                "ID: " + id + "\n" +
+                "Продолжительность: " + duration + "\n" +
+//                "ID рейса: " + flight_id + "\n" +
+//                "Код перевозчика: " + carrier_code + "\n" +
+                "Номер рейса: " + flight_number + "\n" +
+                "Прямой рейс: " + is_direct_flight + "\n" +
+                "Чартерный рейс: " + is_charter_flight + "\n" +
+                "Место отправления: " + origin + "\n" +
+                "Место назначения: " + destination + "\n" +
+                "Местное время отправления: " + local_departure_at + "\n" +
+                "Местное время прибытия: " + local_arrival_at + "\n" +
+                "Город отправления: " + origin_city + "\n" +
+//                "IATA код города отправления: " + origin_iata + "\n" +
+                "Название места отправления: " + origin_name + "\n" +
+//                "Код страны отправления: " + origin_country_code + "\n" +
+                "Название страны отправления: " + origin_country_name + "\n" +
+                "Город назначения: " + destination_city + "\n" +
+//                "IATA код города назначения: " + destination_iata + "\n" +
+                "Название места назначения: " + destination_name + "\n" +
+//                "Код страны назначения: " + destination_country_code + "\n" +
+                "Название страны назначения: " + destination_country_name + "\n" +
+                "Название перевозчика: " + carrier_name + "\n" +
+                "Метрополис отправления: " + origin_metropolis + "\n" +
+//                "IATA код метрополиса отправления: " + origin_metropolis_iata + "\n" +
+                "Дата отправления: " + departure_date + "\n"
+//                +
+//                "Дата создания: " + created_at
+                ;
     }
 
 }

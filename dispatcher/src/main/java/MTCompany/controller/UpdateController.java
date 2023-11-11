@@ -106,6 +106,7 @@ public class UpdateController {
         setView(sendMessage);
         if (userRequestModel.getRequestState() == READY) {
             produceProcess(userRequestModel);
+            System.out.println(userRequestModel);
             usersMap.getUsersRequestMap().remove(chatId);
         }
     }

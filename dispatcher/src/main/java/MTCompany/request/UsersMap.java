@@ -22,14 +22,12 @@ public class UsersMap {
             return false;
         }
 
-        UserRequestModel userRequestModel;
-        userRequestModel = UserRequestModel.builder()
+        UserRequestModel userRequestModel = UserRequestModel.builder()
                 .chatId(chatId)
                 .requestState(IN_PROCESS)
                 .requestCommands(requestCommand)
                 .build();
         getUsersRequestMap().put(userRequestModel.getChatId(), userRequestModel);
         return true;
-
     }
 }

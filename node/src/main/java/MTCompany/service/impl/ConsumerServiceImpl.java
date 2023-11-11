@@ -13,16 +13,16 @@ import static MTCompany.model.RabbitQueue.ONE_DATE_ONE_CITY_REQUEST;
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
 
-    private final MainServiceImpl mainServiceImpl;
-
-    public ConsumerServiceImpl(MainServiceImpl mainServiceImpl) {
-        this.mainServiceImpl = mainServiceImpl;
+    public ConsumerServiceImpl(RequestParseService requestParseService) {
+        this.requestParseService = requestParseService;
     }
+
+    private final RequestParseService requestParseService;
 
     @Override
     @RabbitListener(queues = ONE_DATE_ONE_CITY_REQUEST)
     public void oneDayOneCityUpdate(UserRequestModel userRequestModel) {
         log.debug("NODE: oneDayOneCityUpdate queue is received");
-        mainServiceImpl.processOneDayOneCity(userRequestModel,ONE_DATE_ONE_CITY_REQUEST);
+        requestParseService.processOneDayOneCity(userRequestModel, ONE_DATE_ONE_CITY_REQUEST);
     }
 }

@@ -1,9 +1,9 @@
 package MTCompany.request.handler.Impl;
 
-import MTCompany.request.handler.RequestHandler;
+import MTCompany.request.handler.RequestStrategy;
 import MTCompany.model.UserRequestModel;
 
-public class ArrivalCityAdd implements RequestHandler {
+public class ArrivalCityStrategy implements RequestStrategy {
     @Override
     public String addData(UserRequestModel userRequestModel, String userMessage) {
         userRequestModel.setArrivalCity(userMessage);
